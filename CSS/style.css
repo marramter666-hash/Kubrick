@@ -1,0 +1,33 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+/* CSS GENERAL */
+body{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 90%;
+    background-color: rgb(223, 223, 0);
+}
+/* HEADER */
+.head {
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FOOTER */
+
+/* RESPONSIVE */
+@media screen and (max-width:480px) {
+    body {
+       padding: 0 5vw;
+       margin: 0;
+       box-sizing: border-box; 
+    }
+    
+}
