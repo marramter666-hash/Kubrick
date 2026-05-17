@@ -7,27 +7,70 @@
 /* CSS GENERAL */
 body{
     padding: 0;
-    margin: 0 auto;
+    margin: 2.5vw auto;
     box-sizing: border-box;
-    width: 90%;
-    background-color: rgb(223, 223, 0);
+    width: 95%;
+    font-size: 16px;
 }
-/* HEADER */
-.head {
-    background-color: aqua;
+
+header {
+    background-color: blue;
+    padding: 0 0 5% 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav {
+    background-color: blueviolet;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    gap: 5vw;
 }
+
+body > footer {
+    background-color: blue;
+}
+/* HEADER */
+
 
 /* FOOTER */
 
 /* RESPONSIVE */
 @media screen and (max-width:480px) {
     body {
-       padding: 0 5vw;
-       margin: 0;
-       box-sizing: border-box; 
+       padding: 0;
+       margin: 2.5vh auto;
+       box-sizing: border-box;
+       width: 95%;
+       font-size: 1.5rem; 
     }
-    
+
+    header {
+        background-color: blue;
+        padding: 0 0 15% 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    header > nav {
+        background-color: blueviolet;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;    
+        align-items: right;
+        gap: 5vh;
+    }
 }
