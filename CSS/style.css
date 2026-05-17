@@ -11,6 +11,8 @@ body{
     box-sizing: border-box;
     width: 90%;
     font-size: 16px;
+    background-image: url("gallery/NaranjaM");
+    /* position: fixed; */
 }
 
 ul {
@@ -40,7 +42,8 @@ section {
     display: flex;
     justify-content: center;
     background-color: aqua;
-    height: 400px;
+    height: 800px;
+    /* background-image: url("gallery/NaranjaM"); */
 }
 header {
     padding: 0 0 5% 0;
