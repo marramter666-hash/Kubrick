@@ -9,12 +9,17 @@ body{
     padding: 0;
     margin: 2.5vw auto;
     box-sizing: border-box;
-    width: 95%;
+    width: 90%;
     font-size: 16px;
 }
 
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+
 header {
-    background-color: blue;
     padding: 0 0 5% 0;
     margin: 0;
     box-sizing: border-box;
@@ -23,24 +28,97 @@ header {
     align-items: center;
 }
 
-header > nav {
-    background-color: blueviolet;
+header > ul {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: right;
+    gap: 2vw;
+}
+
+/* FOOTER */
+/* FOOTERgeneral */
+footer {
+    padding: 5% 5% 0 5%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+}
+
+.footersection {
+    display: flex;
+    justify-content: center;
     gap: 5vw;
 }
 
-body > footer {
-    background-color: blue;
+/* FOOTERprimerhijo */
+footer > :first-child > div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
 }
-/* HEADER */
 
+footer > :first-child > div > :last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
 
-/* FOOTER */
+/* FOOTERsegundohijo */
+footer > :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+footer > :nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+footer > :nth-child(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+footer > :nth-child(2) > :first-child > ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+footer > :nth-child(2) > :last-child > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: flex-start ;
+    gap: 1vw;
+}
+
+/* FOOTERtercerhijo */
+footer > :last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > :last-child > ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width:480px) {
@@ -53,7 +131,6 @@ body > footer {
     }
 
     header {
-        background-color: blue;
         padding: 0 0 15% 0;
         margin: 0;
         box-sizing: border-box;
@@ -63,8 +140,7 @@ body > footer {
         gap: 5vh;
     }
 
-    header > nav {
-        background-color: blueviolet;
+    header > ul {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
@@ -72,5 +148,26 @@ body > footer {
         flex-direction: column;    
         align-items: right;
         gap: 5vh;
+    }
+
+    footer {
+        padding: 15% 0 0 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        gap: 5vh;
+    }
+
+    .footersection {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    
+    footer > :last-child {
+        display: flex;
+        justify-content: flex-start;
     }
 }
