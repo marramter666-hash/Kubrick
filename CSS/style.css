@@ -17,8 +17,31 @@ ul {
   list-style: none;
 }
 
-/* HEADER */
+.img {
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+}
 
+img {
+    width: 100%;
+    height: auto;
+    align-items: flex-end;
+}
+
+section {
+    padding: 4vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+#Kubrick {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    height: 400px;
+}
 header {
     padding: 0 0 5% 0;
     margin: 0;
@@ -36,6 +59,36 @@ header > ul {
     justify-content: space-around;
     align-items: right;
     gap: 2vw;
+}
+
+/* INDEX */
+#introduccion {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh;
+}
+
+#introduccion > :first-child {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 3vw;
+}
+
+#introduccion > :last-child {
+    min-width: 380px;
+    max-width: 650px;
+    min-height: 300px;
+    padding: 40px 40px;
+    height: fit-content;
+}
+
+#Aboutus {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
 }
 
 /* FOOTER */
@@ -130,6 +183,12 @@ footer > :last-child > ul {
        font-size: 1.5rem; 
     }
 
+    section {
+        padding: 6vw 0 6vw 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     header {
         padding: 0 0 15% 0;
         margin: 0;
@@ -148,6 +207,30 @@ footer > :last-child > ul {
         flex-direction: column;    
         align-items: right;
         gap: 5vh;
+    }
+
+    #introduccion {
+        gap: 3vh;
+    }
+
+    #introduccion > :first-child {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 2vh;
+    }
+    
+    #introduccion > :last-child {
+        min-width: 370px;
+        max-width: 650px;
+        padding: 40px 40px;
+        height: fit-content;
+    }
+
+    #Aboutus {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
     }
 
     footer {
