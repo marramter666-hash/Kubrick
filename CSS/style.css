@@ -1,0 +1,306 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+/* CSS GENERAL */
+body{
+    padding: 0;
+    margin: 2.5vw auto;
+    box-sizing: border-box;
+    width: 90%;
+    font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+.img {
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    align-items: flex-end;
+}
+
+section {
+    padding: 4vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+#Kubrick {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    height: 400px;
+}
+header {
+    padding: 0 0 5% 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > ul {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    gap: 2vw;
+}
+
+/* INDEX */
+#introduccion {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vh;
+}
+
+#introduccion > :first-child {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 3vw;
+}
+
+#introduccion > :last-child {
+    min-width: 380px;
+    max-width: 650px;
+    min-height: 300px;
+    padding: 40px 40px;
+    height: fit-content;
+}
+
+#Aboutus {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+/* FOOTER */
+/* FOOTERgeneral */
+footer {
+    padding: 5% 5% 0 5%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+}
+
+.footersection {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+/* FOOTERprimerhijo */
+footer > :first-child > div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+footer > :first-child > div > :last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+/* FOOTERsegundohijo */
+footer > :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+footer > :nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+footer > :nth-child(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+footer > :nth-child(2) > :first-child > ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+footer > :nth-child(2) > :last-child > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: flex-start ;
+    gap: 1vw;
+}
+
+/* FOOTERtercerhijo */
+footer > :last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > :last-child > ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:480px) {
+    body {
+       padding: 0;
+       margin: 0.5vh auto 2.5vh auto;
+       box-sizing: border-box;
+       width: 95%;
+       font-size: 1.5rem; 
+    }
+
+    section {
+        padding: 6vw 0 6vw 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 0 0 15% 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    header > ul {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;    
+        align-items: right;
+        gap: 5vh;
+    }
+
+    #introduccion {
+        gap: 3vh;
+    }
+
+    #introduccion > :first-child {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 2vh;
+    }
+    
+    #introduccion > :last-child {
+        min-width: 370px;
+        max-width: 650px;
+        padding: 40px 40px;
+        height: fit-content;
+    }
+
+    #Aboutus {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    footer {
+        padding: 15% 0 0 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        gap: 5vh;
+    }
+
+    .footersection {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    footer > :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+footer > :first-child > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+footer > :first-child > div > :last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+footer > :first-child > ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer > :nth-child(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vh;
+}
+
+footer > :nth-child(2) > :first-child > ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vh;
+}
+
+footer > :nth-child(2) > :last-child > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vh;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: flex-start ;
+    gap: 1vh;
+}
+
+    
+    footer > :last-child {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
