@@ -4,6 +4,10 @@
    box-sizing: border-box; 
 }
 
+
+
+
+
 /* CSS GENERAL */
 body{
     padding: 0;
@@ -11,8 +15,20 @@ body{
     box-sizing: border-box;
     width: 90%;
     font-size: 16px;
-    background-image: url("gallery/NaranjaM");
-    /* position: fixed; */
+}
+
+#indexbody {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("gallery/NaranjaM.jpeg");
+}
+
+article {
+    background-color: white;
+    background-size: 100%;
 }
 
 ul {
@@ -32,18 +48,31 @@ img {
 }
 
 section {
-    padding: 4vw;
+    padding: 5vw;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* TEXTO GENERAL */
+p {
+    size: 20px;
+    /* background-color: blueviolet; */
+    font-family: "Elms Sans", sans-serif;
+}
+
+h3 {
+    size: 100rem;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+}
+
 /* HEADER */
 #Kubrick {
+    padding: 15vw 0 20vw 0;
     display: flex;
     justify-content: center;
-    background-color: aqua;
-    height: 800px;
-    /* background-image: url("gallery/NaranjaM"); */
+    /* background-color: rgb(179, 255, 0); */
+    /* height: 600px; */
 }
 header {
     padding: 0 0 5% 0;
@@ -183,7 +212,9 @@ footer > :last-child > ul {
        margin: 0.5vh auto 2.5vh auto;
        box-sizing: border-box;
        width: 95%;
-       font-size: 1.5rem; 
+       font-size: 1.5rem;
+       background-color: blueviolet;
+       background-size: 100%;
     }
 
     section {
