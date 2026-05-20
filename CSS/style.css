@@ -3,6 +3,7 @@
    margin: 0;
    box-sizing: border-box; 
 }
+
 /* CSS GENERAL */
 body{
     padding: 0;
@@ -148,10 +149,6 @@ header > ul {
 }
 
 
-
-
-
-
 /* INDEX */
 #introduccion {
     display: flex;
@@ -165,17 +162,13 @@ header > ul {
     display: flex;
     flex-direction: column;
     max-width: 50%;
-    gap: 3vw;
+    gap: 1vw;
 }
 
-#introduccion > :last-child {
-    min-width: 380px;
-    max-width: 650px;
-    min-height: 300px;
-    padding: 0;
-    height: fit-content;
+#introduccion > :last-child > img {
     border-radius: 45px;
-    overflow: hidden;
+    width: 30vw;
+    height: auto;
 }
 
 #Aboutus {
