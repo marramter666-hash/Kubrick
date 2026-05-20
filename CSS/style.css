@@ -15,6 +15,7 @@ body{
     box-sizing: border-box;
     width: 90%;
     font-size: 16px;
+    background-color: black;
 }
 
 #indexbody {
@@ -27,7 +28,7 @@ body{
 }
 
 article {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     background-size: 100%;
 }
 
@@ -55,20 +56,49 @@ section {
 
 /* TEXTO GENERAL */
 p {
-    size: 20px;
-    /* background-color: blueviolet; */
+    font-size: 1.2rem;
     font-family: "Elms Sans", sans-serif;
+    color: white;
+}
+
+.pfooter {
+    font-size: 1.2rem;
+    font-family: "Elms Sans", sans-serif;
+    color: black;
 }
 
 h3 {
-    size: 100rem;
+    font-size: 3.5rem;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+h2 {
+    color: rgb(189, 0, 0);
+    font-size: 20rem;
     font-family: "Anton", sans-serif;
     font-weight: 400;
 }
 
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
 /* HEADER */
 #Kubrick {
-    padding: 15vw 0 20vw 0;
+    padding: 3vw 0 2vw 0;
     display: flex;
     justify-content: center;
     /* background-color: rgb(179, 255, 0); */
@@ -123,15 +153,48 @@ header > ul {
     gap: 1vw;
 }
 
+/* TIMELINE */
+#lineatiempo {
+    padding: 4vw 15vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.evento {
+    padding: 9% 3%;
+    margin: 6vw 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.10vh;
+    background-color: #ff0000;
+    border-radius: 6%;
+}
+
+.peli {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 1vw;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
 /* FOOTER */
 /* FOOTERgeneral */
 footer {
-    padding: 5% 5% 0 5%;
+    padding: 7%;
     margin: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 7vw;
+    background-color: white;
 }
 
 .footersection {
@@ -213,7 +276,7 @@ footer > :last-child > ul {
        box-sizing: border-box;
        width: 95%;
        font-size: 1.5rem;
-       background-color: blueviolet;
+       background-color: rgb(0, 0, 0);
        background-size: 100%;
     }
 
@@ -221,6 +284,15 @@ footer > :last-child > ul {
         padding: 6vw 0 6vw 0;
         margin: 0;
         box-sizing: border-box;
+    }
+
+    #indexbody {
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+
+    h2 {
+        font-size: 7rem;
     }
 
     header {
@@ -242,6 +314,32 @@ footer > :last-child > ul {
         align-items: right;
         gap: 5vh;
     }
+
+    #lineatiempo {
+    padding: 0 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.evento {
+    padding: 9% 3%;
+    margin: 10vw 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.10vh;
+    background-color: #ff0000;
+    border-radius: 6%;
+}
+
+.peli {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 1vw;
+}
 
     #introduccion {
         gap: 3vh;
@@ -268,7 +366,7 @@ footer > :last-child > ul {
     }
 
     footer {
-        padding: 15% 0 0 0;
+        padding: 10% 2% 0 2%;
         margin: 0;
         box-sizing: border-box;
         display: flex;
