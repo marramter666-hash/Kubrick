@@ -174,6 +174,28 @@ header > ul {
     gap: 1vw;
 }
 
+.galeria{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.galeria > div > .img {
+    width: 50%;
+}
+
+.galeria > div > .img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria > div {
+    display: flex;
+    gap: 1vw;
+}
+
 /* TIMELINE */
 #lineatiempo {
     padding: 4vw 15vw;
@@ -412,6 +434,18 @@ footer > :last-child > ul {
        background-size: 100%;
     }
 
+    .galeria{
+        flex-direction: column;
+    }
+
+    .galeria > div {
+        flex-direction: column;
+        width: 100%;
+    }
+    .galeria > div > .img {
+        width: 100%;
+    }
+    
     section {
         padding: 6vw 0 6vw 0;
         margin: 0;
@@ -627,4 +661,6 @@ footer > :last-child > ul {
             display: flex;
             justify-content: flex-start;
         }
+
+    
 }
