@@ -54,6 +54,10 @@ section {
     box-sizing: border-box;
 }
 
+.aheader {
+    color: white;
+}
+
 /* TEXTO GENERAL */
 p {
     font-size: 1.2rem;
