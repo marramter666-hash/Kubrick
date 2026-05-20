@@ -58,6 +58,16 @@ section {
     color: white;
 }
 
+a:hover {
+    color: #ff0000;
+}
+
+input:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
 /* TEXTO GENERAL */
 p {
     font-size: 1.2rem;
@@ -79,7 +89,7 @@ h3 {
 }
 
 h2 {
-    color: rgb(189, 0, 0);
+    color: #ff0000;
     font-size: 20rem;
     font-family: "Anton", sans-serif;
     font-weight: 400;
@@ -180,6 +190,7 @@ header > ul {
     gap: 0.10vh;
     background-color: #ff0000;
     border-radius: 6%;
+    border:0  solid;
 }
 
 .peli {
@@ -470,6 +481,66 @@ footer > :last-child > ul {
         flex-direction: column;
         gap: 3vh;
     }
+
+.tabla > :first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.tabla > :last-child > p {
+    padding: 0 0 6vh 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabla > :last-child > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.saldo {
+    padding: 0;
+    margin: 0 0 15vh;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.saldo > div {
+    padding: 3vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.saldo > :nth-child(2) > div {
+    padding: 2vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 4vh 0 4vh;
+}
+
+.saldo > :nth-child(2) > :first-child > div {
+    padding: 2vh 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :nth-child(2) > :last-child > div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :last-child {
+    display: flex;
+    justify-content: flex-end;
+    size: 400;
+}
 
     footer {
         padding: 10% 2% 0 2%;
