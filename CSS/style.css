@@ -876,9 +876,7 @@ footer > :nth-child(2) > :last-child > ul {
     display: flex;
     justify-content: flex-start ;
     gap: 1vw;
-}
-
-/* FOOTERtercerhijo */
+}/* FOOTERtercerhijo */
 footer > :last-child {
     display: flex;
     justify-content: space-between;
@@ -886,8 +884,8 @@ footer > :last-child {
 
 footer > :last-child > ul {
     display: flex;
-    justify-content: space-around;
-    gap: 2vw;
-}  
+    justify-content: 
+    space-around;
+    gap: 2vw;}  
 }
 
