@@ -53,6 +53,21 @@ section {
     color: white;
 }
 
+a:hover {
+    color: #ff0000;
+}
+
+input:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+
+
+
+
+
 /* TEXTO GENERAL */
 p {
     font-size: 1.2rem;
@@ -74,7 +89,7 @@ h3 {
 }
 
 h2 {
-    color: rgb(189, 0, 0);
+    color: #ff0000;
     font-size: 20rem;
     font-family: "Anton", sans-serif;
     font-weight: 400;
@@ -100,6 +115,11 @@ label {
     font-family: "Elms Sans", sans-serif;
     color: white;
 }
+
+
+
+
+
 
 /* HEADER */
 #Kubrick {
@@ -127,6 +147,11 @@ header > ul {
     gap: 2vw;
 }
 
+
+
+
+
+
 /* INDEX */
 #introduccion {
     display: flex;
@@ -147,8 +172,10 @@ header > ul {
     min-width: 380px;
     max-width: 650px;
     min-height: 300px;
-    padding: 40px 40px;
+    padding: 0;
     height: fit-content;
+    border-radius: 45px;
+    overflow: hidden;
 }
 
 #Aboutus {
@@ -156,6 +183,11 @@ header > ul {
     flex-direction: column;
     gap: 1vw;
 }
+
+
+
+
+
 
 /* TIMELINE */
 #lineatiempo {
@@ -175,6 +207,7 @@ header > ul {
     gap: 0.10vh;
     background-color: #ff0000;
     border-radius: 6%;
+    border:0  solid;
 }
 
 .peli {
@@ -189,8 +222,26 @@ header > ul {
     justify-content: center;
 }
 
-/* TICKETS */
+.evento > .img {
+    width: 45%;
+    border-radius: 45px;
+    overflow: hidden;
+}
 
+.evento > .img > img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 28 px;
+
+}
+
+
+
+
+
+
+/* TICKETS */
 .tabla > div {
     padding: 5vh 0;
     margin: 0;
@@ -286,6 +337,11 @@ input {
   padding: 8px;
 }
 
+
+
+
+
+
 /* FOOTER */
 /* FOOTERgeneral */
 footer {
@@ -369,6 +425,11 @@ footer > :last-child > ul {
     gap: 2vw;
 }
 
+
+
+
+
+
 /* RESPONSIVE */
 @media screen and (max-width:480px) {
     body {
@@ -380,6 +441,13 @@ footer > :last-child > ul {
        background-color: rgb(0, 0, 0);
        background-size: 100%;
     }
+
+    img {
+    width: 100%;
+    height: auto;
+    align-items: flex-end;
+    max-width: 100%;
+}
 
     section {
         padding: 6vw 0 6vw 0;
@@ -417,30 +485,48 @@ footer > :last-child > ul {
     }
 
     #lineatiempo {
-     padding: 0 0;
-     margin: 0;
-     box-sizing: border-box;
+        padding: 0 0;
+        margin: 0;
+        box-sizing: border-box;
     }
 
- .evento {
-     padding: 9% 3%;
-     margin: 10vw 0;
-     box-sizing: border-box;
-     display: flex;
-     flex-wrap: wrap-reverse;
-     justify-content: space-between;
-     align-items: center;
-     gap: 0.10vh;
-     background-color: #ff0000;
-     border-radius: 6%;
- }
+    .evento {
+        padding: 9% 3%;
+        margin: 10vw 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.10vh;
+        background-color: #ff0000;
+        border-radius: 6%;
+    }
 
- .peli {
-     display: flex;
-     flex-direction: column;
-     max-width: 100%;
-     gap: 1vw;
- }
+    .peli {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 1vw;
+    }
+
+    .evento > .img {
+        padding: 2vh 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery > .img {
+        padding: 1vh 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #introduccion > .img {
+        padding: 1vh 0;
+        width: 100%;
+        height: auto;
+    }
 
     #introduccion {
         gap: 3vh;
@@ -466,6 +552,66 @@ footer > :last-child > ul {
         gap: 3vh;
     }
 
+.tabla > :first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.tabla > :last-child > p {
+    padding: 0 0 6vh 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabla > :last-child > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.saldo {
+    padding: 0;
+    margin: 0 0 15vh;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.saldo > div {
+    padding: 3vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.saldo > :nth-child(2) > div {
+    padding: 2vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 4vh 0 4vh;
+}
+
+.saldo > :nth-child(2) > :first-child > div {
+    padding: 2vh 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :nth-child(2) > :last-child > div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :last-child {
+    display: flex;
+    justify-content: flex-end;
+    size: 400;
+}
+
     footer {
         padding: 10% 2% 0 2%;
         margin: 0;
@@ -483,57 +629,265 @@ footer > :last-child > ul {
     }
 
     footer > :nth-child(2) {
-     display: flex;
-     justify-content: center;
-     gap: 8vw;
- }
+        display: flex;
+        justify-content: center;
+        gap: 8vw;
+    }
 
- footer > :first-child > div {
-     display: flex;
-     flex-direction: column;
-     gap: 1vh;
- }
+    footer > :first-child > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
 
- footer > :first-child > div > :last-child {
-     display: flex;
-     flex-direction: column;
-     gap: 0.5vh;
- }
+    footer > :first-child > div > :last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vh;
+    }
 
- footer > :first-child > ul {
-     display: flex;
-     justify-content: center;
- }
+    footer > :first-child > ul {
+        display: flex;
+        justify-content: center;
+    }
 
- footer > :nth-child(2) > div > div {
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     gap: 0.5vh;
- }
+    footer > :nth-child(2) > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.5vh;
+    }
 
- footer > :nth-child(2) > :first-child > ul {
-     display: flex;
-     justify-content: flex-start;
-     gap: 1vh;
- }
-
- footer > :nth-child(2) > :last-child > ul {
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     gap: 1vh;
- }
-
- .footerlinks {
-     display: flex;
-     justify-content: flex-start ;
-     gap: 1vh;
- }
-
-    
-    footer > :last-child {
+    footer > :nth-child(2) > :first-child > ul {
         display: flex;
         justify-content: flex-start;
+        gap: 1vh;
     }
+
+    footer > :nth-child(2) > :last-child > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1vh;
+    }
+
+    .footerlinks {
+        display: flex;
+        justify-content: flex-start ;
+        gap: 1vh;
+    }
+
+        
+        footer > :last-child {
+            display: flex;
+            justify-content: flex-start;
+        }
 }
+
+
+
+
+@media screen and (max-width:1024px) {
+    body {
+       padding: 0;
+       margin: 0.5vh auto 2.5vh auto;
+       box-sizing: border-box;
+       width: 95%;
+       font-size: 1.5rem;
+       background-color: rgb(0, 0, 0);
+       background-size: 100%;
+    }
+
+    img {
+    width: 100%;
+    height: auto;
+    align-items: flex-end;
+    max-width: 100%;
+}
+
+.gallery > .img {
+        padding: 1vh 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #introduccion > .img {
+        padding: 1vh 0;
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 6vw 0 6vw 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #indexbody {
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+
+    h2 {
+        font-size: 7rem;
+    }
+
+header {
+    padding: 0 0 5% 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > ul {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    gap: 2vw;
+}
+
+#lineatiempo {
+    padding: 4vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabla > :nth-child(2) > :nth-child(2) > div {
+    padding: 2vh 3vw;
+    margin: 2vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 6vw;
+    border: 1px solid white;
+}
+
+.saldo {
+    padding: 0;
+    margin: 0 0 10vh;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.saldo > div {
+    padding: 1vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.saldo > :nth-child(2) > div {
+    padding: 1vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 4vh 0 4vh;
+}
+
+.saldo > :nth-child(2) > :first-child > div {
+    padding: 1vh 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :nth-child(2) > :last-child > div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :last-child {
+    display: flex;
+    justify-content: flex-end;
+    size: 400;
+}
+
+footer {
+    padding: 7%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+    background-color: white;
+}
+
+.footersection {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+/* FOOTERprimerhijo */
+footer > :first-child > div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+footer > :first-child > div > :last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+/* FOOTERsegundohijo */
+footer > :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+footer > :nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+footer > :nth-child(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+footer > :nth-child(2) > :first-child > ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+footer > :nth-child(2) > :last-child > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: flex-start ;
+    gap: 1vw;
+}
+
+/* FOOTERtercerhijo */
+footer > :last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > :last-child > ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}  
+}
+
