@@ -447,6 +447,13 @@ footer > :last-child > ul {
        background-size: 100%;
     }
 
+    img {
+    width: 100%;
+    height: auto;
+    align-items: flex-end;
+    max-width: 100%;
+}
+
     section {
         padding: 6vw 0 6vw 0;
         margin: 0;
@@ -506,6 +513,24 @@ footer > :last-child > ul {
         flex-direction: column;
         max-width: 100%;
         gap: 1vw;
+    }
+
+    .evento > .img {
+        padding: 2vh 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery > .img {
+        padding: 1vh 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #introduccion > .img {
+        padding: 1vh 0;
+        width: 100%;
+        height: auto;
     }
 
     #introduccion {
@@ -667,7 +692,7 @@ footer > :last-child > ul {
 
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
     body {
        padding: 0;
        margin: 0.5vh auto 2.5vh auto;
@@ -676,6 +701,25 @@ footer > :last-child > ul {
        font-size: 1.5rem;
        background-color: rgb(0, 0, 0);
        background-size: 100%;
+    }
+
+    img {
+    width: 100%;
+    height: auto;
+    align-items: flex-end;
+    max-width: 100%;
+}
+
+.gallery > .img {
+        padding: 1vh 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #introduccion > .img {
+        padding: 1vh 0;
+        width: 100%;
+        height: auto;
     }
 
     section {
@@ -712,56 +756,21 @@ header > ul {
     gap: 2vw;
 }
 
+#lineatiempo {
+    padding: 4vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    #lineatiempo {
-        padding: 0 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .evento {
-        padding: 9% 3%;
-        margin: 10vw 0;
-        box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0.10vh;
-        background-color: #ff0000;
-        border-radius: 6%;
-    }
-
-    .peli {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        gap: 1vw;
-    }
-
-    #introduccion {
-        gap: 3vh;
-    }
-
-    #introduccion > :first-child {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        gap: 2vh;
-    }
-    
-    #introduccion > :last-child {
-        min-width: 370px;
-        max-width: 650px;
-        padding: 40px 40px;
-        height: fit-content;
-    }
-
-    #Aboutus {
-        display: flex;
-        flex-direction: column;
-        gap: 3vh;
-    }
+.tabla > :nth-child(2) > :nth-child(2) > div {
+    padding: 2vh 3vw;
+    margin: 2vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 6vw;
+    border: 1px solid white;
+}
 
 .saldo {
     padding: 0;
@@ -805,76 +814,85 @@ header > ul {
     size: 400;
 }
 
-
-
-    footer {
-        padding: 10% 2% 0 2%;
-        margin: 0;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        align-items: right;
-        gap: 5vh;
-    }
-
-    .footersection {
-        display: flex;
-        flex-direction: column;
-        gap: 5vh;
-    }
-
-    footer > :nth-child(2) {
-        display: flex;
-        justify-content: center;
-        gap: 8vw;
-    }
-
-    footer > :first-child > div {
-        display: flex;
-        flex-direction: column;
-        gap: 1vh;
-    }
-
-    footer > :first-child > div > :last-child {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5vh;
-    }
-
-    footer > :first-child > ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    footer > :nth-child(2) > div > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 0.5vh;
-    }
-
-    footer > :nth-child(2) > :first-child > ul {
-        display: flex;
-        justify-content: flex-start;
-        gap: 1vh;
-    }
-
-    footer > :nth-child(2) > :last-child > ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 1vh;
-    }
-
-    .footerlinks {
-        display: flex;
-        justify-content: flex-start ;
-        gap: 1vh;
-    }
-
-        
-        footer > :last-child {
-            display: flex;
-            justify-content: flex-start;
-        }
+footer {
+    padding: 7%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 7vw;
+    background-color: white;
 }
+
+.footersection {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+/* FOOTERprimerhijo */
+footer > :first-child > div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+footer > :first-child > div > :last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+/* FOOTERsegundohijo */
+footer > :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+footer > :nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+footer > :nth-child(2) > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5vw;
+}
+
+footer > :nth-child(2) > :first-child > ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+footer > :nth-child(2) > :last-child > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: flex-start ;
+    gap: 1vw;
+}
+
+/* FOOTERtercerhijo */
+footer > :last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > :last-child > ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}  
+}
+
