@@ -214,7 +214,6 @@ header > ul {
     padding: 2vh 3vw;
     margin: 4vh;
     box-sizing: border-box;
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
     gap: 6vw;
@@ -234,9 +233,30 @@ header > ul {
 }
 
 .saldo > div {
-    padding: 5vh 0;
+    padding: 3vh 3vw;
+    margin: 0 10vw ;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    background-image: url("CSS/gallery/FotoTickets.png");
+}
+
+.saldo > :nth-child(2) > div {
+    padding: 2vh 3vw;
     margin: 0;
     box-sizing: border-box;
+    margin: 0 4vh 0 4vh;
+}
+
+.saldo > :nth-child(2) > :first-child > div {
+    padding: 2vh 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :nth-child(2) > :first-child > div {
+
 }
 
 /* FOOTER */
