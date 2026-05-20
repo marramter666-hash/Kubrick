@@ -68,6 +68,11 @@ input:hover {
     border: 1px solid #000000;
 }
 
+
+
+
+
+
 /* TEXTO GENERAL */
 p {
     font-size: 1.2rem;
@@ -116,6 +121,11 @@ label {
     color: white;
 }
 
+
+
+
+
+
 /* HEADER */
 #Kubrick {
     padding: 3vw 0 2vw 0;
@@ -141,6 +151,11 @@ header > ul {
     align-items: right;
     gap: 2vw;
 }
+
+
+
+
+
 
 /* INDEX */
 #introduccion {
@@ -173,6 +188,11 @@ header > ul {
     flex-direction: column;
     gap: 1vw;
 }
+
+
+
+
+
 
 /* TIMELINE */
 #lineatiempo {
@@ -220,8 +240,13 @@ header > ul {
     border-radius: 28 px;
 
 }
-/* TICKETS */
 
+
+
+
+
+
+/* TICKETS */
 .tabla > div {
     padding: 5vh 0;
     margin: 0;
@@ -317,6 +342,11 @@ input {
   padding: 8px;
 }
 
+
+
+
+
+
 /* FOOTER */
 /* FOOTERgeneral */
 footer {
@@ -400,7 +430,243 @@ footer > :last-child > ul {
     gap: 2vw;
 }
 
+
+
+
+
+
 /* RESPONSIVE */
+@media screen and (max-width:480px) {
+    body {
+       padding: 0;
+       margin: 0.5vh auto 2.5vh auto;
+       box-sizing: border-box;
+       width: 95%;
+       font-size: 1.5rem;
+       background-color: rgb(0, 0, 0);
+       background-size: 100%;
+    }
+
+    section {
+        padding: 6vw 0 6vw 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #indexbody {
+        background-color: rgb(0, 0, 0);
+        background-image: none;
+    }
+
+    h2 {
+        font-size: 7rem;
+    }
+
+    header {
+        padding: 0 0 15% 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    header > ul {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;    
+        align-items: right;
+        gap: 5vh;
+    }
+
+    #lineatiempo {
+        padding: 0 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .evento {
+        padding: 9% 3%;
+        margin: 10vw 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.10vh;
+        background-color: #ff0000;
+        border-radius: 6%;
+    }
+
+    .peli {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 1vw;
+    }
+
+    #introduccion {
+        gap: 3vh;
+    }
+
+    #introduccion > :first-child {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 2vh;
+    }
+    
+    #introduccion > :last-child {
+        min-width: 370px;
+        max-width: 650px;
+        padding: 40px 40px;
+        height: fit-content;
+    }
+
+    #Aboutus {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+.tabla > :first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.tabla > :last-child > p {
+    padding: 0 0 6vh 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabla > :last-child > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.saldo {
+    padding: 0;
+    margin: 0 0 15vh;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.saldo > div {
+    padding: 3vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.saldo > :nth-child(2) > div {
+    padding: 2vh 3vw;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 4vh 0 4vh;
+}
+
+.saldo > :nth-child(2) > :first-child > div {
+    padding: 2vh 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :nth-child(2) > :last-child > div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :last-child {
+    display: flex;
+    justify-content: flex-end;
+    size: 400;
+}
+
+    footer {
+        padding: 10% 2% 0 2%;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        gap: 5vh;
+    }
+
+    .footersection {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    footer > :nth-child(2) {
+        display: flex;
+        justify-content: center;
+        gap: 8vw;
+    }
+
+    footer > :first-child > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    footer > :first-child > div > :last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vh;
+    }
+
+    footer > :first-child > ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer > :nth-child(2) > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.5vh;
+    }
+
+    footer > :nth-child(2) > :first-child > ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1vh;
+    }
+
+    footer > :nth-child(2) > :last-child > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1vh;
+    }
+
+    .footerlinks {
+        display: flex;
+        justify-content: flex-start ;
+        gap: 1vh;
+    }
+
+        
+        footer > :last-child {
+            display: flex;
+            justify-content: flex-start;
+        }
+}
+
+
+
+
 @media screen and (max-width:480px) {
     body {
        padding: 0;
