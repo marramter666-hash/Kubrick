@@ -96,6 +96,12 @@ a {
     text-decoration: none;
 }
 
+label {
+    font-size: 1.2rem;
+    font-family: "Elms Sans", sans-serif;
+    color: white;
+}
+
 /* HEADER */
 #Kubrick {
     padding: 3vw 0 2vw 0;
@@ -183,6 +189,53 @@ header > ul {
 .mapa {
     display: flex;
     justify-content: center;
+}
+
+/* TICKETS */
+
+.tabla > div {
+    padding: 5vh 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabla > :first-child {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5vw;
+}
+
+/* .tabla > :first-child > div {
+
+} */
+
+.tabla > :nth-child(2) > :first-child{
+    padding: 0 0 3vh 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabla > :nth-child(2) > :nth-child(2) > div {
+    padding: 2vh 3vw;
+    margin: 4vh;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    gap: 6vw;
+    border: 1px solid white;
+}
+
+.tabla > :last-child > p {
+    padding: 0 0 3vh 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tabla > :last-child > div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 6vw;
 }
 
 /* FOOTER */
