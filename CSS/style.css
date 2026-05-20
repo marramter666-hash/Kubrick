@@ -236,12 +236,17 @@ header > ul {
     gap: 6vw;
 }
 
+.saldo {
+    padding: 0;
+    margin: 0 7vw 15vh 7vw ;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
 .saldo > div {
     padding: 3vh 3vw;
     margin: 0 10vw ;
     box-sizing: border-box;
-    /* background-color: aqua; */
-    background-image: url("CSS/gallery/FotoTickets.png");
 }
 
 .saldo > :nth-child(2) > div {
@@ -259,8 +264,36 @@ header > ul {
     justify-content: space-between;
 }
 
-.saldo > :nth-child(2) > :first-child > div {
-    
+.saldo > :nth-child(2) > :last-child > div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.saldo > :last-child {
+    display: flex;
+    justify-content: flex-end;
+    size: 400;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #ff0000;
+}
+
+input[type="sunmit"],
+input[type="radio"] {
+  accent-color: #ff0000;
+}
+
+input {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 8px;
 }
 
 /* FOOTER */
